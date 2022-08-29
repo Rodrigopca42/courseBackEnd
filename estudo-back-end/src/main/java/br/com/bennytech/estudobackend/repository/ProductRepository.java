@@ -8,6 +8,7 @@ import java.util.InputMismatchException;
 import org.springframework.stereotype.Repository;
 
 import br.com.bennytech.estudobackend.model.Product;
+import br.com.bennytech.estudobackend.model.exception.ResourceNotFoundException;
 
 @Repository
 public class ProductRepository {
@@ -70,7 +71,7 @@ public Product update(Product product){
     Optional<Product> productFound = obterPorId(product.getId());
 
     if(productFound.isEmpty()){
-        throw new InputMismatchException("Produto não encontrado.");
+        throw new ResourceNotFoundException("Produto não encontrado.");
     }
     //remover o antigo produto da lista
     delete(product.getId());

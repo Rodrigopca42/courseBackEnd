@@ -5,8 +5,11 @@ Objetivo:
     Modelo: ok
         Produtos: id, nome, quantidade, valor, observação.
 
-
-    Repository:
+    Repository:ok
         obterTodos, obterPorId, adicionar, atualizar, deletar.
 
-
+    Serviço de produto: ok
+        obterTodos, obterPorId, adicionar, atualizar, deletar. 
+         
+    Controller Product: ok
+        obterTodos, obterPorId, adicionar, atualizar, deletar. 
