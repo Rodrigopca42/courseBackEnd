@@ -9,7 +9,7 @@ import javax.persistence.Id;
 public class Product {
     
     @Id  //vai tranformar essa coluna em primary key
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY )
     private Integer id;
     private String name;
     private Integer quantit;
